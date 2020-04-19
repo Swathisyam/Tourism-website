@@ -9,13 +9,15 @@ body{
     background-size: 100%;
 }
 .box{
-    text-decoration: none;
+    
     width: 300px;
     padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-color: grey;
+    border-radius: 3px;
     /* background-color: slategray; */
     text-align: center;
 }
@@ -38,19 +40,25 @@ body{
     font-size: larger;
     border-radius: 30px;
     transition: 0.25s;
-
-
 }
+
+.box input[type="checkbox"]{
+    font-size: medium;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 .box input[type="text"]:focus,.box input[type="password"]:focus
 {
 width: 280px;
 border-color: rgb(17, 48, 95);
 
 }
-.box input[type="button"]{
+.box input[type="submit"]{
     font-weight: bolder;
-    border: 0;
-    background:white;
+    /* border:0; */
+    border-style: double;
+    background:grey;
     display: block;
     margin:20px auto;
     text-decoration: none;
@@ -60,14 +68,22 @@ border-color: rgb(17, 48, 95);
     width: 150px;
     outline: none;
     color: rgb(66, 4, 4);
-    border-radius: 30px;
+    border-radius: 45px;
     transition: 0.25s;
     cursor: pointer;
 
 }
-
-.box input[type="button"]:hover
+.box input[type="submit"]:hover
 {
+    text-decoration: none;
+background: cyan;
+}
+.button{
+    display: block;
+    margin:20px auto;
+    text-align: center;
 
-background: teal;
+}
+a{
+    text-decoration: none;
 }

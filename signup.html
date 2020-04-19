@@ -14,21 +14,39 @@
 
     <body background="images/ecotourism1.jpg">
          
-  
-
+        
+         
     <div class="wrap">
-<form action="index.html">
-    <h1 style="padding: 10px;">Sign Up Here</h1>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Username">
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Password">
-    <input type="text" placeholder="Confirm Password">
-    <a href="index.html"><input type="button" value="Sign Up" > </a>
+        <form action="login.html" onsubmit="return validate()" >
+
+            <h1 style="padding: 5px;">Sign Up Here</h1>
     
-</form>
+            
+    <input type="text" name="Firstname"  placeholder="First Name" id="fsname" required>
 
+    <input type="text" name="lastname" placeholder="Last Name" id="lsname">
 
+    <input type="text" name="username" placeholder="Username" id="username" required> 
+    
+    <input type="text" placeholder=" Mobile Number" id="mobile" >  
+    <label for="error1" id="phnerror"></label> 
+
+    <input type="text" placeholder="Email" id="email" required>
+    <label for="error2" id="mailerror"></label>
+
+    <input type="password" placeholder="Password" id="paswrd" required>
+    <label for="error3" id="paswderror"></label>
+
+    <!-- <span id="strength">Type Password</span> -->
+    <!-- <input type="text" placeholder="Confirm Password" id="pwd" required>  -->
+
+    
+    <input type="submit" value="Signup" id="submit" onclick="validate()">
+        </form>
     </div>
+
+    <script src="signup.js"></script>
+
+    
 </body>
 </html>
